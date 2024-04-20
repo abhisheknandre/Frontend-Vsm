@@ -1,0 +1,10 @@
+<label class="col-md-2">
+    Update Vehicle Status
+</label>
+<div class="col-md-10">
+    <select name="Advisor Email" class="form-control">
+        <option>--Select--</option>
+        <option *ngFor="let adv of AdvisorList">{{ adv.email }}</option>
+    </select>
+
+</div>
