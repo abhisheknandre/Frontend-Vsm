@@ -8,20 +8,34 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UpdateVehicleComponent } from './pages/update-vehicle/update-vehicle.component';
 import { NgFor } from '@angular/common';
+import { AddVehicleComponent } from './pages/add-vehicle/add-vehicle.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './pages/auth/login/login.component';
+import { RegisterComponent } from './pages/auth/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VehicleListComponent,
     UpdateVehicleComponent,
-    
+    AddVehicleComponent,
+    LoginComponent,
+    RegisterComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    NgFor
+    NgFor,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      timeOut: 10000,
+      positionClass: 'toast-bottom-right',
+      preventDuplicates: true,
+    })
   ],
   providers: [
     provideClientHydration()
