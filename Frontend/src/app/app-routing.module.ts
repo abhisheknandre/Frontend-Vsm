@@ -1,15 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { VehicleListComponent } from './pages/vehicle-list/vehicle-list.component';
-import { UpdateVehicleComponent } from './pages/update-vehicle/update-vehicle.component';
-import { AddVehicleComponent } from './pages/add-vehicle/add-vehicle.component';
+import { LoginComponent } from './components/login/login.component';
+import { ForgetpasswordComponent } from './components/forgetpassword/forgetpassword.component';
+import { RegisterComponent } from './components/register/register.component';
+import { ErrorpageComponent } from './components/errorpage/errorpage.component';
 
 const routes: Routes = [
-  {path:'vehiclelist', component:VehicleListComponent},
-  {path:'update-vehicle/:id', component:UpdateVehicleComponent},
-  {
-    path:'add-vehicle', component:AddVehicleComponent
-  }
+  
+  {path:'login',component:LoginComponent},
+  {path:'',redirectTo:'/login',pathMatch:'full'},
+  {path:'forgetpassword',component:ForgetpasswordComponent},
+  // {path:'',component:AdminDashboardComponent},
+  
+  {path:'admin-dashboard',loadChildren:()=>import('./modules/admin/admin.module').then((m)=>m.AdminModule)},
+  {path:'advisor-dashboard',loadChildren:()=>import('./modules/advisor/advisor.module').then((m)=>m.AdvisorModule)},
+  
+  // {path:'dashboard', component:DashboardComponent},
+  {path:'register', component:RegisterComponent}
 ];
 
 @NgModule({

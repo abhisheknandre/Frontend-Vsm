@@ -16,7 +16,7 @@ export class VehicleserviceService {
 
   login(email: string, password: string): Observable<any> {
     const body = { email, password };
-    return this.httpClient.post(`${this.baseURL}/login`, body);
+    return this.httpClient.post(`${this.baseURL}/user/login`, body);
   }
 
   addVehicle(name: string, year:number, licensePlate:string, ownerName:string, oemail:string ): Observable<any> {

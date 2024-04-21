@@ -18,6 +18,8 @@ export class AddVehicleComponent {
   licensePlate: any;
 
   submitted = false;
+email: any;
+password: any;
 
   constructor(private toastr: ToastrService,
             private service: VehicleserviceService,
