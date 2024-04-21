@@ -1,3 +1,62 @@
 <app-admindashboard>
-    <h1>hiii</h1>
+    <div class="container">
+    <div class="col-md-12 grid-margin transparent">
+        <div class="row">
+          <div class="col-md-4 mb-4 stretch-card transparent">
+            <div class="card card-tale">
+              <div class="card-body" style="height: 155px;">
+                <p class="mb-4">Vehicles Scheduled This Week</p>
+                <p class="fs-30 mb-2"></p>
+                <p>_____________</p>
+                <p class="fs-30 mb-2"></p>
+                <button type="button" routerLink="/admin-dashboard/vehicle-list" class="btn btn-primary">Get List</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 stretch-card transparent">
+            <div class="card card-tale">
+              <div class="card-body" style="height: 155px;">
+                <p class="mb-4">Vehicles under Service</p>
+                <!-- <p class="fs-30 mb-2">{{count.Total_Model}}</p> -->
+                <p>_____________</p>
+                <p class="fs-30 mb-2"></p>
+                <button type="button" routerLink="/underService" class="btn btn-primary">Get List</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 stretch-card transparent">
+            <div class="card card-tale">
+              <div class="card-body" style="height: 155px;">
+                <p class="mb-4">Vehicles Service Done</p>
+                <!-- <p class="fs-30 mb-2">{{count.Total_Model}}</p> -->
+                <p>_____________</p>
+                <p class="fs-30 mb-2"></p>
+                <button type="button" routerLink="/serviceDone" class="btn btn-primary">Get List</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div style="float: left;" class="row">
+          <!-- <div class="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
+            <div class="card card-tale">
+              <div class="card-body" style="height: 155px;">
+                <p class="mb-4">Service Completed Vehicles</p>
+                <p class="fs-30 mb-2">{{count.Total_Car}}</p>
+                <p>_____________</p>
+              </div>
+            </div> -->
+          <!-- </div> -->
+          <!-- <div class="col-md-6 stretch-card transparent">
+            <div class="card card-tale">
+              <div class="card-body" style="height: 155px;">
+                <p class="mb-4">Total Sharer</p>
+                <p class="fs-30 mb-2">0</p>
+                <p>_____________</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
 </app-admindashboard>

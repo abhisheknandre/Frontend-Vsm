@@ -8,12 +8,12 @@ import {MatButtonModule} from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { VehicleListComponent } from './pages/vehicle-list/vehicle-list.component';
+
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { UpdateVehicleComponent } from './pages/update-vehicle/update-vehicle.component';
+
 import { NgFor } from '@angular/common';
-import { AddVehicleComponent } from './pages/add-vehicle/add-vehicle.component';
+
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ErrorpageComponent } from './components/errorpage/errorpage.component';
@@ -26,9 +26,6 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 @NgModule({
   declarations: [
     AppComponent,
-    VehicleListComponent,
-    UpdateVehicleComponent,
-    AddVehicleComponent,
     LoginComponent,
     RegisterComponent,
     ErrorpageComponent,

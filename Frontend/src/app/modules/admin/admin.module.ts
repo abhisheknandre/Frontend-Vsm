@@ -11,6 +11,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
+import { VehicleListComponent } from './components/vehicle-list/vehicle-list.component';
+import { UpdateVehicleComponent } from './components/update-vehicle/update-vehicle.component';
 
 
 @NgModule({
@@ -18,7 +21,9 @@ import { MatButtonModule } from '@angular/material/button';
     AdditemsComponent,
     AddvehicleComponent,
     AdmindashboardComponent,
-    DashboardComponent
+    DashboardComponent,
+    VehicleListComponent,
+    UpdateVehicleComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +32,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatSidenavModule,
     MatListModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule
   ]
 })
 export class AdminModule { }

@@ -3,9 +3,7 @@
       <div class="row w-100 mx-0">
         <div class="col-lg-5 mx-auto">
           <div class="auth-form-light text-left py-5 px-4 px-sm-5">
-            <div class="brand-logo text-center">
-              <img src="\assets\images\logo12.png" alt="vmslogo">
-            </div>
+            
             <h2 class="text-center">User Login</h2>
             <form (ngSubmit)="login()">
               <div class="mb-3">
@@ -20,7 +18,7 @@
                 <div class="form-check-label text-muted">
                   
                 </div>
-                <a href="#" class="auth-link text-black">Forgot password?</a>
+                <a routerLink="/register" routerLinkActive="active" class="auth-link text-black">Register </a>
               </div>
               <button type="submit" class="text-center btn btn-primary">Login</button>
             </form>

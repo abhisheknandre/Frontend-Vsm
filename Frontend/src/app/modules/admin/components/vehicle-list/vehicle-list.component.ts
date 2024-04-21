@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Vehicle } from '../../vehicle';
-import { VehicleserviceService } from '../../vehicleservice.service';
+import { VehicleserviceService } from '../../../../vehicleservice.service';
+import { Vehicle } from '../../../../vehicle';
 import { Router } from '@angular/router';
 
 @Component({
@@ -25,7 +25,7 @@ export class VehicleListComponent {
   }
 
   updateVehicle(id: number){
-    this.router.navigate(['update-vehicle', id]);
+    this.router.navigate(['admin-dashboard/update-vehicle', id]);
   }
 
   deleteVehicle(id: number){
@@ -35,3 +35,4 @@ export class VehicleListComponent {
     });
   }
 }
+
